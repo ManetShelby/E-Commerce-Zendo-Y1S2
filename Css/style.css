@@ -58,13 +58,15 @@
 
   .arrow {
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     background: rgba(255, 255, 255, 0.8);
     border: none;
     font-size: 24px;
-    padding: 10px;
     cursor: pointer;
+    border-radius: 32px;
+    width: 24px;
+    
   }
 
   .arrow.left {
@@ -73,7 +75,7 @@
 
   .arrow.right {
     right: 0;
-    border-radius: 16px;
+    
   }
   .title-style{
     font-size: 18px;
