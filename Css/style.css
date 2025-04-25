@@ -194,7 +194,7 @@
     display: block;
 }
 .imaborder{
-    border: 1px solid black;
+    border: 1px solid black;    
 }
 .product {
     opacity: 0;
@@ -279,5 +279,7 @@
   margin-left: 40px;
   margin-top: 10px;
   cursor: pointer;
-
+}
+.pointer{
+    cursor: pointer;
 }
