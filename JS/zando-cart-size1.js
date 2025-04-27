@@ -98,7 +98,7 @@ let show = document.getElementById("show");
             selectedId = button.innerText;  // You can use this ID however you want
         }
         // rotine-cart1
-        let pricezando1=10.07;
+        let pricezando1=15.59;
         let Deliveryfee=1.25;
         let ShowImg=("img").src;
         let Amountpay= pricezando1+Deliveryfee;

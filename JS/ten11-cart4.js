@@ -98,7 +98,7 @@ function selected_size(button) {
     selectedId = button.innerText;  // You can use this ID however you want
 }
 // rotine-cart1
-let ten114=10.07;
+let ten114=16.87 ;
 let Deliveryfee=1.25;
 let ShowImg=("img").src;
 let Amountpay= ten114+Deliveryfee;

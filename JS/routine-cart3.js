@@ -100,7 +100,7 @@
             selectedId = button.innerText;  // You can use this ID however you want
         }
         // rotine-cart1
-        let rotine3=10.07;
+        let rotine3=10.87;
         let Deliveryfee=1.25;
         let ShowImg=("img").src;
         let Amountpay= rotine3+Deliveryfee;
