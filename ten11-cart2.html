@@ -143,14 +143,15 @@
     <!--add to cart-->
     <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+        <h5 class="offcanvas-title" id="staticBackdropLabel"></h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <div>
-          I will not close if you click outside of me.
+        <div class="offcanvas-body">
+          <div id="cartOutput">
+  
+          </div>
         </div>
-      </div>
     </div>
     <!-- model login -->
     <div class="modal " id="loginModal" tabindex="">
@@ -322,7 +323,6 @@
                                     <img src="image/Screenshot 2025-04-13 234151.png" class="hover-image"
                                         alt="Hover Image">
                                 </div>
-
                             </div>
 
                             <span class="product-title">Regular Fitted T-Shirts</span><br>
@@ -344,19 +344,19 @@
                 <div class="d-flex sizeconten">
 
                     <div class="me-2 ">
-                        <button id="btnxs" onclick="fnxs()" class="border">XS</button>
+                        <button id="btnxs" onclick="fnxs(); selected_size(this)" class="border">XS</button>
                     </div>
                     <div class="me-2">
-                        <button id="btns" onclick="fns()" class="size">S</button>
+                        <button id="btns" onclick="fns(); selected_size(this)" class="size">S</button>
                     </div>
                     <div class="me-2">
-                        <button id="btnm" onclick="fnm()" class="size">M</button>
+                        <button id="btnm" onclick="fnm(); selected_size(this)" class="size">M</button>
                     </div>
                     <div class="me-2">
-                        <button id="btnl" onclick="fnl()" class="size">L</button>
+                        <button id="btnl" onclick="fnl(); selected_size(this)" class="size">L</button>
                     </div>
                     <div class="me-2">
-                        <button id="btnxl" onclick="fnxl()" class="size">XL</button>
+                        <button id="btnxl" onclick="fnxl(); selected_size(this)" class="size">XL</button>
                     </div><br>
                 </div>
                 <div class=" fw-bold mt">Quantity</div>
@@ -366,7 +366,7 @@
                     <button id="btnI" class="qtybtn" onclick="fnIc()">+</button>
                     <div class="row">
                         <div class="d-flex mt-4">
-                            <button class="btn btn-dark addcart">Add to Bage</button>
+                            <button class="btn btn-dark addcart" id="btnAdd">Add to Bage</button>
                             <i class="bi bi-heart mt-1 heart1 heartIcon"></i>
                         </div>
                         <div class="infobg mt-4">
